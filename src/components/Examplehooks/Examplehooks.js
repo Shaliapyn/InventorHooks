@@ -1,9 +1,13 @@
-import React, { useEffect, useReducer, useRef, useState } from "react";
+import React, { useContext, useEffect, useReducer, useRef, useState } from "react";
+import { ImportantContext } from "../../Contexts/ImportantContext";
 
 import "./style.css";
 
 const Examplehooks = () => {
+  const {setImportant} = useContext(ImportantContext)
+
   const [todo, setTodo] = useState([]);
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos")
       .then((response) => response.json())
@@ -56,6 +60,7 @@ const Examplehooks = () => {
           ))}
         </ul>
       </div>
+      <button className="imp-btn" onClick={()=> setImportant(true)}>Change Important</button> 
     </>
   );
 };

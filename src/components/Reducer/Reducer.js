@@ -40,7 +40,7 @@ const reducer = (state, action) => {
         <span>{state.count}</span>
         <button className='btn' onClick={decrement}>-</button>
       </div>
-      { <span className='count-text'>{state.text}</span> }
+      <span className='count-text'>{state.text}</span> 
 
     </>
   )

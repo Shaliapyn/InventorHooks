@@ -1,0 +1,11 @@
+.impBtn {
+    padding: 5px;
+    background-color: brown;
+    border-radius: 14px;
+}
+.blockImportant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
