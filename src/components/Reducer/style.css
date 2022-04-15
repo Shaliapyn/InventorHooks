@@ -1,0 +1,15 @@
+.count-block {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+}
+.btn {
+    padding: 8px;
+    border-radius: 14px;
+    margin: 10px;
+}
+.count-text {
+    display: flex;
+    justify-content: center;
+}
