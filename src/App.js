@@ -5,6 +5,7 @@ import Examplehooks from './components/Examplehooks'
 import  { ImportantContext } from "./Contexts/ImportantContext"
 import Important from './components/Important'
 import ExampleMemo from './components/ExampleMemo'
+import Callback from './components/ExampleCallback'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         {important ? <Important /> : <Examplehooks />}
       </ImportantContext.Provider>
       <ExampleMemo />
+      <Callback />
     </>
   )
 }

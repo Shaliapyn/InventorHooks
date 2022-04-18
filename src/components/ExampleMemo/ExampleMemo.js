@@ -19,7 +19,7 @@ const ExampleMemo = () => {
             longestSent = currentWord
         }
     }
-    console.log('This string will not appear adter rerendering because of useMemo')
+    console.log('This string will not appear after rerendering because of useMemo')
     return longestSent
   }
 
